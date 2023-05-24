@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="/js/blog.js"></script>
+    <title>Satria Nur Hafid</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="/assets/images/logo.jpeg" alt="Logo Dumbways">
+        </div>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/blog.html" class="active">My Project</a></li>
+        </ul>
+        <div class="button">
+          <a href="/contact.html">Contact Me</a>
+        </div>
+      </nav>
+
+    <div class="blog-form">
+        <h1>ADD MY PROJECT</h1>
+        <form onsubmit="addBlog(event)">
+            <div>
+              <label for="project-name">Project Name</label>
+              <input type="text" id="project-name" name="project-name">
+            </div>
+            <div class="date">
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date" name="start-date">
+            </div>
+            <div class="date">
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date" name="end-date">
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <textarea id="description" name="description"  rows="4"></textarea>
+            </div>
+            <div>
+              <label for="technology">Technologies</label>
+              <div class="checkbox-container">
+                <div class="checkbox-column">
+                  <label>
+                    <input type="checkbox" name="technology" value="nodejs">
+                    Node.js
+                  </label>
+                  <br>
+                  <label>
+                    <input type="checkbox" name="technology" value="reactjs">
+                    React.js
+                  </label>
+                </div>
+                <div class="checkbox-column">
+                  <label>
+                    <input type="checkbox" name="technology" value="php">
+                    PHP
+                  </label>
+                  <br>
+                  <label>
+                    <input type="checkbox" name="technology" value="typescript">
+                    TypeScript
+                  </label>
+                </div>
+              </div>
+            </div>
+            <label for="blog-image">Upload Image</label>
+            <div class="blog-image-container">
+              <input type="file" id="blog-image" name="blog-image" accept="image/*">
+              <i class="fas fa-paperclip attach-icon"></i>
+            </div>
+            <div class="submit">
+                <button class="button-submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div> 
+    
+    <div class="blog">
+      <h1>My Project</h1>
+      <div id="contents" class="blog-list">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="/assets/images/restaurant.jpg" alt="Music">
+          </div>
+          <div class="blog-content">
+            <a class="title" href="blog-detail.html" target="_blank">Restaurant Website</a>
+            <p class="duration">Durasi : 9 Bulan</p>
+            <p class="desc">Restaurant website adalah sebuah situs web yang didedikasikan untuk menyediakan informasi dan pengalaman interaktif tentang restoran tertentu. Situs ini bertujuan untuk menarik perhatian pengunjung potensial, memberikan informasi tentang menu, lokasi, dan layanan yang disediakan oleh restoran tersebut, serta memfasilitasi proses pemesanan makanan secara online.</p>
+            <div class="tech-images">
+              <img src="assets/images/reactjs.jpg">
+              <img src="assets/images/nodejs.jpg">
+              <img src="assets/images/typescript.jpg">
+            </div>
+            <p class="published">20 May 2023 14:45 WIB | Dian</p>
+            <p class="published">1 Minutes Ago</p>
+            <div class="button-container">
+              <button class="button-project" type="button">Edit</button>
+              <button class="button-project" type="button">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="/assets/images/organic.jpg" alt="Music">
+          </div>
+          <div class="blog-content">
+            <a class="title" href="blog-detail.html" target="_blank">Organic dog food website</a>
+            <p class="duration">Durasi : 1 Tahun 2 Bulan</p>
+            <p class="desc">Organic dog food website adalah sebuah situs web yang didedikasikan untuk menyediakan informasi dan penjualan makanan anjing organik. Situs ini bertujuan untuk memberikan pengetahuan dan kesadaran kepada pemilik anjing tentang pentingnya memberikan makanan yang sehat dan alami untuk hewan peliharaan mereka.</p>
+            <div class="tech-images">
+              <img src="assets/images/reactjs.jpg">
+              <img src="assets/images/nodejs.jpg">
+              <img src="assets/images/typescript.jpg">
+              <img src="assets/images/php.jpg"> 
+            </div>
+            <p class="published">20 May 2023 14:45 WIB</p>
+            <p class="published">1 Minutes Ago</p>
+            <div class="button-container">
+              <button class="button-project" type="button">Edit</button>
+              <button class="button-project" type="button">Delete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="/assets/images/music.jpg" alt="Music">
+          </div>
+          <div class="blog-content">
+            <a class="title" href="blog-detail.html" target="_blank">Music Playlist App</a>
+            <p class="duration">Durasi : 3 Bulan</p>
+            <p class="desc">Music Playlist App adalah sebuah aplikasi yang dirancang untuk memudahkan pengguna dalam membuat dan mengatur daftar putar musik sesuai dengan preferensi mereka. Aplikasi ini menyediakan berbagai fitur dan fungsi yang memungkinkan pengguna untuk menikmati musik secara pribadi atau berbagi daftar putar dengan teman-teman mereka.</p>
+            <div class="tech-images">
+              <img src="assets/images/reactjs.jpg">
+              <img src="assets/images/nodejs.jpg">
+            </div>
+            <p class="published">20 May 2023 14:45 WIB | Dian</p>
+            <p class="published">1 Minutes Ago</p>
+            <div class="button-container">
+              <button class="button-project" type="button">Edit</button>
+              <button class="button-project" type="button">Delete</button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+</body>
+</html>
